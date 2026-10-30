@@ -1,0 +1,81 @@
+
+.root {
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+.header-box {
+    -fx-background-color: #93C5FD;
+    -fx-padding: 15px 20px;
+}
+
+.header-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E3A8A;
+}
+
+.header-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #1E40AF;
+}
+
+/* Form Input */
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #1F2937;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #0284C7;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 7px;
+}
+
+.text-field:focused {
+    -fx-border-color: #2563EB;
+}
+
+/* Tombol Hitung (Biru Full Width) */
+.button-primary {
+    -fx-background-color: #0284C7;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+}
+
+.button-primary:hover {
+    -fx-background-color: #0369A1;
+}
+
+/* Kotak Hasil Perhitungan (Cyan/Biru Muda) */
+.result-card {
+    -fx-background-color: #E0F2FE;
+    -fx-border-color: #7DD3FC;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 15px;
+}
+
+.result-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0F172A;
+}
+
+.result-value {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0284C7;
+}
+
+.result-subtext {
+    -fx-font-size: 12px;
+    -fx-text-fill: #334155;
+}

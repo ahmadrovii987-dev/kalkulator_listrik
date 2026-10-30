@@ -1,0 +1,5 @@
+module-info.class
+kalkulator_listrik\model\Appliance.class
+kalkulator_listrik\SecondaryController.class
+kalkulator_listrik\PrimaryController.class
+kalkulator_listrik\App.class

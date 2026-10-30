@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefWidth="450.0" spacing="0.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kalkulator_listrik.PrimaryController">
+    <children>
+        <!-- Banner Header Biru -->
+        <VBox styleClass="header-box" spacing="4.0">
+            <children>
+                <Label text="⚡ Kalkulator Biaya Listrik" styleClass="header-title" />
+                <Label text="Estimasi biaya bulanan peralatan elektronik Anda" styleClass="header-subtitle" />
+            </children>
+        </VBox>
+
+        <!-- Area Form & Tombol -->
+        <VBox spacing="18.0">
+            <padding>
+                <Insets top="20.0" right="20.0" bottom="20.0" left="20.0" />
+            </padding>
+            <children>
+                <GridPane hgap="10.0" vgap="12.0">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="45.0" />
+                        <ColumnConstraints percentWidth="55.0" />
+                    </columnConstraints>
+                    <children>
+                        <Label text="Nama Perangkat Listrik:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="nameField" promptText="AC 1 PK" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                        <Label text="Daya Listrik (Watt):" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <TextField fx:id="wattField" promptText="750" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                        <Label text="Durasi Pemakaian (Jam/Hari):" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <TextField fx:id="hoursField" promptText="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    </children>
+                </GridPane>
+
+                <Button maxWidth="Infinity" onAction="#handleCalculate" styleClass="button-primary" text="Hitung Estimasi Biaya" />
+
+                <!-- Card Kotak Hasil Perhitungan -->
+                <VBox styleClass="result-card" alignment="CENTER" spacing="6.0">
+                    <children>
+                        <Label text="Hasil Estimasi (Tarif Rp 1.444,70 / kWh):" styleClass="result-title" />
+                        <Label fx:id="resultValueLabel" text="Rp 0,00 / bulan" styleClass="result-value" />
+                        <Label fx:id="resultSubLabel" text="Estimasi konsumsi: 0,00 kWh / bulan" styleClass="result-subtext" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>
